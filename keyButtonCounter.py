@@ -1,6 +1,6 @@
 import pythoncom, pyHook, os, time, re
 
-def AddAndReplace(numberToAdd):
+def AddReplacePush(numberToAdd):
     holla = int(numberToAdd) + 1
     holla = str(holla)
     print holla
@@ -27,6 +27,7 @@ def AddAndReplace(numberToAdd):
                 Time saved: %s minutes""" % (holla, minutes))
     except:
         pass
+
     writeNewCounter.close()
     README.close()
     os.system('git add .')
@@ -37,7 +38,7 @@ def AddAndReplace(numberToAdd):
 def counterCommit():
     with open('attiny85ButtonCounter.txt', 'r') as readCounter:
         totalNumber = readCounter.readline()
-        AddAndReplace(totalNumber)
+        AddReplacePush(totalNumber)
     readCounter.close()
 
 def onKeyDown(event):

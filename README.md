@@ -5,5 +5,5 @@
                 It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
                 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
                 <br>
-                Keystrokes not pressed: 547<br>
+                Keystrokes not pressed: 548<br>
                 Time saved: 4 minutes
