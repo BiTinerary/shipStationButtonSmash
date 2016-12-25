@@ -5,6 +5,7 @@ def AddAndReplace(numberToAdd):
     holla = str(holla)
     print holla
     timeSaved = int(holla) * .5
+    minutes = int(timeSaved) / 60
 
     try:
         with open('attiny85ButtonCounter.txt', 'w+') as writeNewCounter:
@@ -21,7 +22,7 @@ def AddAndReplace(numberToAdd):
             It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
             As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
             <br>
-            Keystrokes not pressed: %s Time saved: %s seconds""" % (holla, timeSaved))
+            Keystrokes not pressed: %s Time saved: %s minutes""" % (holla, minutes))
 
     writeNewCounter.close()
     README.close()
