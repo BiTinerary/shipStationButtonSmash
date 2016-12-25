@@ -23,7 +23,7 @@ Not so much for practicality, it saves only about 1/2 second/press or 1/2 the to
 It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 <br>
-Keystrokes not pressed: **<p style="font-size:20px"><kbd>%s</kbd></p>**<br>
+Keystrokes not pressed: **<p style="font-size:20px">%s</p>**<br>
 Time saved: **<kbd>%s</kbd>** minutes""" % (holla, minutes))
 
     except:
