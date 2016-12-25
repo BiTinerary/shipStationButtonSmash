@@ -5,4 +5,4 @@
             It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
             As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
             <br>
-            Keystrokes not pressed: 540 Time saved: 270.0 seconds
+            Keystrokes not pressed: 541 Time saved: 270.5 seconds
