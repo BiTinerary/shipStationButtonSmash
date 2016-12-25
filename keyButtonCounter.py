@@ -14,6 +14,7 @@ def AddAndReplace(numberToAdd):
     with open('README.md', 'r+') as README:
         for line in README:
             print line,
+            line.replace('Keystrokes not pressed', 'Keystrokes **not** pressed')
             """
             findRegex = numberRegex.search(str(line))
             foundMatch = findRegex.group()
