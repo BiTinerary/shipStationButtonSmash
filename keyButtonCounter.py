@@ -1,9 +1,10 @@
-import pythoncom, pyHook, os, time
+import pythoncom, pyHook, os, time, re
 
 def AddAndReplace(numberToAdd):
     holla = int(numberToAdd) + 1
     holla = str(holla)
     print holla
+    numberRegex = re.compile(r'\d{2,50}')
     try:
         with open('attiny85ButtonCounter.txt', 'r+') as writeNewCounter:
             writeNewCounter.write(holla)
@@ -13,7 +14,7 @@ def AddAndReplace(numberToAdd):
     try:
         with open('README.md', 'r+') as README:
             for line in README:
-                print line
+                line.replace(numberRegex, holla)
     except:
         pass
 
