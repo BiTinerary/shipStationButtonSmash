@@ -6,7 +6,6 @@ def AddReplacePush(numberToAdd):
     print holla
     timeSaved = int(holla) * .5
     minutes = float(timeSaved) / 60
-    totesMinutes = minutes * 1
 
     try:
         with open('buttonCounter.txt', 'r+') as writeNewCounter:
@@ -25,7 +24,7 @@ It's primary use is just to be more cathartic in smashing a gigantic switch ever
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 <br>
 Keystrokes not pressed: **<kbd>%s</kbd>**<br>
-Time saved: **<kbd>%s</kbd>** minutes""" % (holla, totesMinutes))
+Time saved: **<kbd>%s</kbd>** minutes""" % (holla, round(minutes, 2)))
 
     except:
         pass
