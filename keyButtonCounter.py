@@ -6,7 +6,7 @@ def AddReplacePush(numberToAdd):
     print holla
     timeSaved = int(holla) * .5
     minutes = float(timeSaved) / 60
-    totesMinutes = minutes * 1000
+    totesMinutes = minutes * 100
 
     try:
         with open('buttonCounter.txt', 'r+') as writeNewCounter:
