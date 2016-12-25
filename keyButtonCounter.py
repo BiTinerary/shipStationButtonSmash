@@ -24,7 +24,7 @@ It's primary use is just to be more cathartic in smashing a gigantic switch ever
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 <br>
 Keystrokes not pressed: **%s**<br>
-Time saved: <div id="counter">There are<br /><span>%s</span><br />Minutes saved</div>""" % (holla, minutes))
+Time saved: <div id="counter">%sMinutes saved</div>""" % (holla, minutes))
 
     except:
         pass
