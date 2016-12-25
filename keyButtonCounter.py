@@ -4,19 +4,22 @@ def AddAndReplace(numberToAdd):
     holla = int(numberToAdd) + 1
     holla = str(holla)
     print holla
-    numberRegex = re.compile(r'\d{2,50}')
+    numberRegex = re.compile(r'\d{3}')
     try:
         with open('attiny85ButtonCounter.txt', 'r+') as writeNewCounter:
             writeNewCounter.write(holla)
     except:
         pass
 
-    try:
-        with open('README.md', 'r+') as README:
-            for line in README:
-                line.replace(numberRegex, holla)
-    except:
-        pass
+    with open('README.md', 'r+') as README:
+        for line in README:
+            print line
+            """
+            findRegex = numberRegex.search(str(line))
+            foundMatch = findRegex.group()
+            print foundMatch
+            #line.replace(numberRegex, holla)
+            """
 
     writeNewCounter.close()
     README.close()
