@@ -4,23 +4,24 @@ def AddAndReplace(numberToAdd):
     holla = int(numberToAdd) + 1
     holla = str(holla)
     print holla
-    numberRegex = re.compile(r'\d{3}')
+    timeSaved = int(holla) * .5
+
     try:
-        with open('attiny85ButtonCounter.txt', 'r+') as writeNewCounter:
+        with open('attiny85ButtonCounter.txt', 'w+') as writeNewCounter:
             writeNewCounter.write(holla)
     except:
         pass
 
-    with open('README.md', 'r+') as README:
-        for line in README:
-            print line,
-            line.replace('Keystrokes not pressed', 'Keystrokes **not** pressed')
-            """
-            findRegex = numberRegex.search(str(line))
-            foundMatch = findRegex.group()
-            print foundMatch
-            #line.replace(numberRegex, holla)
-            """
+    with open('README.md', 'w+') as README:
+        README.write(
+            """# shipStationButtonSmashCounter<br>
+            This is a counter for the number of times a custom button is pressed that I made/created/installed at work. <br>
+            Not so much for practicality, it saves only about 1/2 second/press or 1/2 the total keystrokes, but conceptually has broadened my tech aptitude. <br>
+
+            It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
+            As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
+            <br>
+            Keystrokes not pressed: %s Time saved: %s seconds""" % (holla, timeSaved))
 
     writeNewCounter.close()
     README.close()
