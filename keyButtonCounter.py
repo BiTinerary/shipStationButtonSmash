@@ -13,7 +13,7 @@ def AddAndReplace(numberToAdd):
 
     with open('README.md', 'r+') as README:
         for line in README:
-            print line
+            print line,
             """
             findRegex = numberRegex.search(str(line))
             foundMatch = findRegex.group()
