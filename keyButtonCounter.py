@@ -8,7 +8,7 @@ def AddReplacePush(numberToAdd):
     minutes = int(timeSaved) / 60
 
     try:
-        with open('attiny85ButtonCounter.txt', 'r+') as writeNewCounter:
+        with open('buttonCounter.txt', 'r+') as writeNewCounter:
             writeNewCounter.write(holla)
     except:
         pass
@@ -37,7 +37,7 @@ Time saved: **<kbd>%s</kbd>** minutes""" % (holla, minutes))
     time.sleep(1)
 
 def counterCommit():
-    with open('attiny85ButtonCounter.txt', 'r') as readCounter:
+    with open('buttonCounter.txt', 'r') as readCounter:
         totalNumber = readCounter.readline()
         AddReplacePush(totalNumber)
     readCounter.close()
