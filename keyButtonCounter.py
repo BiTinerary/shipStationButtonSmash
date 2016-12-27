@@ -1,7 +1,7 @@
 import pythoncom, pyHook, os, time, re
 
 def AddReplacePush(numberToAdd):
-    holla = int(numberToAdd)# + 1
+    holla = int(numberToAdd) + 1
     holla = str(holla)
     print holla
     timeSaved = int(holla) * .5
