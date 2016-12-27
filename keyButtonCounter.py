@@ -48,6 +48,7 @@ def onKeyDown(event):
         counterCommit()
         return 1
     else:
+        print keyname
         return 1
 
 hookmgr = pyHook.HookManager()
