@@ -1,4 +1,4 @@
-import pythoncom, pyHook, os, time, re
+import pythoncom, pyHook, os, time, re, pyautogui
 
 def AddReplacePush(numberToAdd):
     holla = int(numberToAdd) + 1
@@ -31,6 +31,7 @@ Time saved: **<kbd>%s</kbd>** minutes""" % (holla, round(minutes, 2)))
 
     writeNewCounter.close()
     README.close()
+    pyautogui.click(1708, 766)
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % holla)
     os.system('git push')
