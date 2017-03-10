@@ -5,5 +5,5 @@ Not so much for practicality, it saves only about 1/2 second/press or 1/2 the to
 It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 <br>
-Keystrokes not pressed: **<kbd>2508</kbd>**<br>
-Time saved: **<kbd>20.9</kbd>** minutes
+Keystrokes not pressed: **<kbd>2509</kbd>**<br>
+Time saved: **<kbd>20.91</kbd>** minutes
