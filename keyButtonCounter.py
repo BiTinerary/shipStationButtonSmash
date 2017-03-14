@@ -31,7 +31,6 @@ Time saved: **<kbd>%s</kbd>** minutes""" % (holla, round(minutes, 2)))
 
     writeNewCounter.close()
     README.close()
-    pyautogui.typewrite('s')
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % holla)
     os.system('git push')
@@ -45,7 +44,7 @@ def counterCommit():
 
 def onKeyDown(event):
     keyname = event.GetKey()
-    if keyname == 'Rmenu':
+    if keyname == 's':
         counterCommit()
         return 1
     else:
