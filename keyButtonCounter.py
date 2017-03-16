@@ -44,7 +44,7 @@ def counterCommit():
 
 def onKeyDown(event):
     keyname = event.GetKey()
-    if keyname == 's':
+    if keyname == 'S':
         counterCommit()
         return 1
     else:
