@@ -32,9 +32,11 @@ Time saved: **<kbd>%s</kbd>** minutes""" % (holla, round(minutes, 2)))
     writeNewCounter.close()
     README.close()
     os.system('git add .')
+    time.sleep(.5)
     os.system('git commit -m "counterUpdate: %s"' % holla)
+    time.sleep(.5)
     os.system('git push')
-    time.sleep(1)
+    time.sleep(.5)
 
 def counterCommit():
     with open('buttonCounter.txt', 'r') as readCounter:
