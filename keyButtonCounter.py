@@ -7,7 +7,7 @@ def AddReplacePush(numberToAdd):
     timeSaved = int(holla) * .5
     minutes = float(timeSaved) / 60
     tape = int(holla) * 14
-    miletape = tape / 5280
+    miletape = float(tape / 5280)
     try:
         with open('buttonCounter.txt', 'r+') as writeNewCounter:
             writeNewCounter.write(holla)
@@ -26,16 +26,19 @@ As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mou
 <br>
 Keystrokes **not** pressed: **<kbd>%s</kbd>**<br>
 Time saved: **<kbd>%s</kbd>** minutes<br>
-Miles of tape used: **<kbd>%sft</kbd>**""" % (holla, round(minutes, 2), float(tape)))
+**<kbd>%s</kbd>** miles of tape used""" % (holla, round(minutes, 2), round(miletape, 2)))
 
     except:
         pass
 
     writeNewCounter.close()
     README.close()
+    print miletape
+    """miletape
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % holla)
     os.system('git push')
+    """
 
 def counterCommit():
     with open('buttonCounter.txt', 'r') as readCounter:
