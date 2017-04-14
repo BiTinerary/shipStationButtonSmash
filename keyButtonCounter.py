@@ -7,6 +7,7 @@ def AddReplacePush(numberToAdd):
     timeSaved = int(holla) * .5
     minutes = float(timeSaved) / 60
     tape = int(holla) * 14
+    miletape = tape / 5280
     try:
         with open('buttonCounter.txt', 'r+') as writeNewCounter:
             writeNewCounter.write(holla)
@@ -24,8 +25,8 @@ It's primary use is just to be more cathartic in smashing a gigantic switch ever
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 <br>
 Keystrokes **not** pressed: **<kbd>%s</kbd>**<br>
-Time saved: **<kbd>%s</kbd>** minutes
-Length of tape used: **<kbd>%s</kbd>**""" % (holla, round(minutes, 2), tape))
+Time saved: **<kbd>%s</kbd>** minutes<br>
+Miles of tape used: **<kbd>%sft</kbd>**""" % (holla, round(minutes, 2), float(tape)))
 
     except:
         pass
