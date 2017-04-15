@@ -7,7 +7,7 @@ Not so much for practicality, it saves only about 1/2 second/press (1/2 the tota
 It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 
-I use a ~$1 digispark <a href='https://www.aliexpress.com/item/Free-shipping-1PCS-LOT-GY-Digispark-kickstarter-miniature-minimal-development-board-ATTINY85-module-for-Arduino-usb/32673631021.html?spm=2114.13010608.0.0.U4yBFt'>attiny85</a> with the switch wired between pin 2 and GND.
+I use a ~$1 digispark <a href='https://www.aliexpress.com/item/Free-shipping-1PCS-LOT-GY-Digispark-kickstarter-miniature-minimal-development-board-ATTINY85-module-for-Arduino-usb/32673631021.html?spm=2114.13010608.0.0.U4yBFt'>attiny85</a> with the switch wired between pin 2 and GND.<br>
 <br>
 Keystrokes **not** pressed: **<kbd>3965</kbd>**<br>
 Time saved: **<kbd>33.04</kbd>** minutes<br>
