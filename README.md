@@ -7,4 +7,6 @@ As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mou
 <br>
 Keystrokes **not** pressed: **<kbd>3965</kbd>**<br>
 Time saved: **<kbd>33.04</kbd>** minutes<br>
-**<kbd>10.0</kbd>** miles of tape used
+**<kbd>10.0</kbd>** miles of tape used<br>
+<br>
+<img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'>
