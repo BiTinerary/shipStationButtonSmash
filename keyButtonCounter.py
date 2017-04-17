@@ -48,12 +48,13 @@ def counterFile():
 def onKeyDown(event):
     keyname = event.GetKey()
     if keyname == 'S':
+        time.sleep(4)
         counterFile()
         return 1
     else:
         print keyname
+        time.sleep(4)
         return 1
-    time.sleep(4)
 
 hookmgr = pyHook.HookManager()
 hookmgr.KeyDown = onKeyDown
