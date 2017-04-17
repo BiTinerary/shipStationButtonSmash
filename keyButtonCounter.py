@@ -1,4 +1,4 @@
-import pythoncom, pyHook, os, time, re, pyautogui, time
+import pythoncom, pyHook, os, time
 
 def AddReplaceString(numberToAdd):
     runningCounter = int(numberToAdd) + 1
@@ -53,6 +53,7 @@ def onKeyDown(event):
     else:
         print keyname
         return 1
+    time.sleep(4)
 
 hookmgr = pyHook.HookManager()
 hookmgr.KeyDown = onKeyDown
