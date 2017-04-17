@@ -11,6 +11,7 @@ def AddReplacePush(numberToAdd):
     try:
         with open('buttonCounter.txt', 'r+') as writeNewCounter:
             writeNewCounter.write(str(runningCounter))
+            writeNewCounter.close()
     except:
         pass
 
@@ -26,14 +27,13 @@ As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mou
 <br>
 Keystrokes **not** pressed: **<kbd>%s</kbd>**<br>
 Time saved: **<kbd>%s</kbd>** minutes<br>
-**<kbd>%s</kbd>** miles of tape used""" % (runningCounter, round(minutes, 2), miletape))
-
+**<kbd>%s</kbd>** miles of tape used<br>
+<center><img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'></center>""" % (runningCounter, round(minutes, 2), miletape))
+            README.close()
     except:
         pass
 
-    writeNewCounter.close()
-    README.close()
-    print tape / 5280
+    print miletape
 
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % runningCounter)
