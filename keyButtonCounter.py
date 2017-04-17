@@ -1,6 +1,6 @@
 import pythoncom, pyHook, os, time, re, pyautogui, time
 
-def AddReplacePush(numberToAdd):
+def AddReplaceString(numberToAdd):
     runningCounter = int(numberToAdd) + 1
 
     timeSaved = int(runningCounter) * .5
@@ -35,21 +35,22 @@ Time saved: **<kbd>%s</kbd>** minutes<br>
 
     print miletape
 
+
+def finalCommit
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % runningCounter)
     os.system('git push')
 
-
-def counterCommit():
+def counterFile():
     with open('buttonCounter.txt', 'r') as readCounter:
         totalNumber = readCounter.readline()
-        AddReplacePush(totalNumber)
+        AddReplaceString(totalNumber)
     readCounter.close()
 
 def onKeyDown(event):
     keyname = event.GetKey()
     if keyname == 'S':
-        counterCommit()
+        counterFile()
         return 1
     else:
         print keyname
