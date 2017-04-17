@@ -34,11 +34,9 @@ Time saved: **<kbd>%s</kbd>** minutes<br>
     writeNewCounter.close()
     README.close()
     print miletape
-    """miletape
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % holla)
     os.system('git push')
-    """
 
 def counterCommit():
     with open('buttonCounter.txt', 'r') as readCounter:
