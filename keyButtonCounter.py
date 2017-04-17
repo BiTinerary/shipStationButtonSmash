@@ -34,9 +34,7 @@ Time saved: **<kbd>%s</kbd>** minutes<br>
         pass
 
     print miletape
-
-def finalCommit
-
+    
     os.system('git add .')
     os.system('git commit -m "counterUpdate: %s"' % runningCounter)
     os.system('git push')
