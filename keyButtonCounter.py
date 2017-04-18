@@ -5,7 +5,7 @@ def AddReplaceString(numberToAdd):
 
     timeSaved = int(runningCounter) * .5
     minutes = float(timeSaved) / 60
-    tape = int(runningCounter) * 14
+    tape = int(runningCounter) * 11.7
     miletape = float(tape / 5280)
 
     try:
@@ -28,7 +28,7 @@ As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mou
 Keystrokes **not** pressed: **<kbd>%s</kbd>**<br>
 Time saved: **<kbd>%s</kbd>** minutes<br>
 **<kbd>%s</kbd>** miles of tape used<br>
-<center><img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'></center>""" % (runningCounter, round(minutes, 2), miletape))
+<center><img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'></center>""" % (runningCounter, round(minutes, 2), round(miletape, 2)))
             README.close()
     except:
         pass
