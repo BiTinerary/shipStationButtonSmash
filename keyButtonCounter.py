@@ -6,7 +6,7 @@ def AddReplaceString(numberToAdd):
     timeSaved = int(runningCounter) * .5
     minutes = float(timeSaved) / 60
     tape = int(runningCounter) * 11.7
-    miletape = float(tape / 5280)
+    miletape = round(float(tape / 5280),2)
 
     try:
         with open('buttonCounter.txt', 'r+') as writeNewCounter:
