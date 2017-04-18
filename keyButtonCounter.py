@@ -28,7 +28,7 @@ As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mou
 Keystrokes **not** pressed: **<kbd>%s</kbd>**<br>
 Time saved: **<kbd>%s</kbd>** minutes<br>
 **<kbd>%s</kbd>** miles of tape used<br>
-<center><img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'></center>""" % (runningCounter, round(minutes, 2), round(miletape, 2)))
+<center><img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'></center>""" % (runningCounter, round(minutes, 2), miletape))
             README.close()
     except:
         pass
