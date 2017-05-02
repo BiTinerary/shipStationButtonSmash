@@ -5,7 +5,7 @@ Not so much for practicality, it saves only about 1/2 second/press or 1/2 the to
 It's primary use is just to be more cathartic in smashing a gigantic switch everytime something is sold and shipped. <br>
 As opposed to pressing <kbd>Alt+P</kbd> or swapping from the keyboard to the mouse. <br>
 <br>
-Keystrokes **not** pressed: **<kbd>4316</kbd>**<br>
-Time saved: **<kbd>35.97</kbd>** minutes<br>
-**<kbd>9.56</kbd>** miles of tape used<br>
+Keystrokes **not** pressed: **<kbd>4317</kbd>**<br>
+Time saved: **<kbd>35.98</kbd>** minutes<br>
+**<kbd>9.57</kbd>** miles of tape used<br>
 <center><img src='https://github.com/BiTinerary/shipStationButtonSmash/blob/master/20170414_124519.jpg'></center>
